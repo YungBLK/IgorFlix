@@ -1,0 +1,50 @@
+
+.menu{
+    width: 100%;
+    height: 94px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(13, 13, 13);
+}
+.logo{
+    height: 40px;
+}
+
+
+@media (max-width: 880px) {
+    .logo{
+        max-width: 105px;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu{
+        justify-content: center;
+    }
+    .nav{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        background-color: lightblue;
+        
+    }
+    .nav .buttonLink{
+        border: none;       
+    }
+}
+@media (min-width: 767px) {
+    .logo{
+        padding-left: 2rem;
+    }
+    .nav{
+        padding-right: 2rem;
+    }
+}
